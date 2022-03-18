@@ -1,7 +1,7 @@
 <?php
-class Country extends Controller {
+class Countries extends Controller {
     public function __construct() {
-        $this->countryModel = $this->model('Countries');
+        $this->countryModel = $this->model('Country');
     }
 
     public function index() {
@@ -11,6 +11,6 @@ class Country extends Controller {
             'countryData' => $countryData
         ];
 
-        $this->view('Countries/index', $data);
+        $this->view('countries/index', $data);
     }
 }
